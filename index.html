@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>E-commerce product page coding challenge</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/images/logo.svg" />
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/collections">Collections</a></li>
+          <li class="nav-link"><a href="/men">Men</a></li>
+          <li class="nav-link"><a href="/women">Women</a></li>
+          <li class="nav-link"><a href="/about">About</a></li>
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-menu">
+        <button class="cart unstyled-btn">
+          <img src="/images/icon-cart.svg" />
+        </button>
+        <button class="profile unstyled-btn">
+          <img src="/images/image-avatar.png" />
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section>
+        <!-- Card/Lightbox -->
+        <div class="lightbox-large">
+          <img src="/images/image-product-1.jpg" id="lightbox-image" />
+        </div>
+        <ul class="lightbox-thumbnails">
+          <li onclick="onThumbnailSelect(1)" id="thumbnail-1" class="selected">
+            <img src="/images/image-product-1-thumbnail.jpg" />
+          </li>
+          <li onclick="onThumbnailSelect(2)" id="thumbnail-2">
+            <img src="/images/image-product-2-thumbnail.jpg" />
+          </li>
+          <li onclick="onThumbnailSelect(3)" id="thumbnail-3">
+            <img src="/images/image-product-3-thumbnail.jpg" />
+          </li>
+          <li onclick="onThumbnailSelect(4)" id="thumbnail-4">
+            <img src="/images/image-product-4-thumbnail.jpg" />
+          </li>
+        </ul>
+      </section>
+
+      <!-- Description -->
+      <section>
+        <div class="desc-subTitle">Sneaker Company</div>
+        <div class="desc-title">Fall limited Edition Sneaker</div>
+        <div class="desc-body">
+          Is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic
+        </div>
+        <div class="desc-price">$125</div>
+        <div class="desc-actions">
+          <div class="counter">
+            <button class="btn btn-secondary primary95">-</button>
+            <input class="quantity" value="0" />
+            <button class="btn btn-secondary primary95">+</button>
+          </div>
+          <button class="btn btn-primary add-to-cart-btn">
+            <i class="icon cart" />
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

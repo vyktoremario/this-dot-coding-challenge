@@ -1,0 +1,162 @@
+body {
+  margin: 0 auto;
+  width: 90%;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-link a {
+  color: #999;
+  text-decoration: none;
+}
+
+.primary95 {
+  color: #f37621;
+}
+
+.user-menu {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+}
+
+.unstyled-btn {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.logo {
+  width: 138px;
+  height: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.nav-link {
+  padding: 4px;
+  color: #999;
+}
+
+.lightbox-thumbnails {
+  list-style: none;
+}
+
+.lightbox-thumbnails > li {
+  display: inline-block;
+}
+
+.lightbox-thumbnails > li > img {
+  max-width: 75px;
+  max-height: 75px;
+  padding: 0 5px;
+}
+
+.lightbox-thumbnails > li.selected {
+  filter: opacity(25%);
+}
+
+#lightbox-image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.main {
+  display: flex;
+}
+
+.main > * {
+  padding: 40px;
+}
+.desc-subTitle {
+  color: #f37621;
+  padding: 0 10px;
+}
+
+.desc-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.desc-body {
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.desc-price {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.counter {
+  margin-bottom: 10px;
+}
+
+.quantity {
+  width: 5px;
+  padding: 20px 10px;
+  margin: 0px;
+  border: none;
+  background-color: #f6f8fc;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 20px 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #f37621;
+}
+
+.add-to-cart-btn {
+  width: 250px;
+}
+
+.btn-secondary {
+  background-color: #f6f8fc;
+  padding: 5px 10px;
+}
